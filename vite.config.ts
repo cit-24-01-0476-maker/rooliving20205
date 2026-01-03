@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
 export default defineConfig({
-  base: '/rooliving20205/', // ✅ ADD THIS (repo name)
+  // ✅ IMPORTANT: Custom domain uses root "/"
+  base: '/',
+
   plugins: [react()],
+
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
@@ -20,6 +23,7 @@ export default defineConfig({
       'embla-carousel-react@8.6.0': 'embla-carousel-react',
       'cmdk@1.1.1': 'cmdk',
       'class-variance-authority@0.7.1': 'class-variance-authority',
+
       '@radix-ui/react-tooltip@1.1.8': '@radix-ui/react-tooltip',
       '@radix-ui/react-toggle@1.1.2': '@radix-ui/react-toggle',
       '@radix-ui/react-toggle-group@1.1.2': '@radix-ui/react-toggle-group',
@@ -46,13 +50,16 @@ export default defineConfig({
       '@radix-ui/react-aspect-ratio@1.1.2': '@radix-ui/react-aspect-ratio',
       '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialog',
       '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
+
       '@': path.resolve(__dirname, './src'),
     },
   },
+
   build: {
     target: 'esnext',
     outDir: 'dist',
   },
+
   server: {
     port: 3000,
     open: true,
