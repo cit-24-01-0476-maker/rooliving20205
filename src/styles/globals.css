@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-400;
+  }
+  
+  body {
+    @apply bg-gray-100 text-gray-800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Wireframe specific styles */
+.wireframe-box {
+  @apply border-2 border-dashed border-gray-400 bg-gray-50;
+}
+
+.wireframe-text {
+  @apply bg-gray-300 h-4 rounded;
+}
+
+.wireframe-circle {
+  @apply border-2 border-gray-400 bg-white;
+}
