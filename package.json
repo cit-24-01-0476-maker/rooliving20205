@@ -2,7 +2,8 @@
   "name": "rooliving20205",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cit-24-01-0476-maker.github.io/rooliving20205/",
+  "homepage": "https://rooliving20205.rooliving.hstn.me/",
+,
   "type": "module",
   "scripts": {
     "dev": "vite",

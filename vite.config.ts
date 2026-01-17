@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   // ✅ GitHub Pages repo name එක: rooliving20205
-  base: '/rooliving20205/',
+  base: '/',
 
   plugins: [react()],
 
