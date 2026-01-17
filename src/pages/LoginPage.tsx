@@ -18,14 +18,14 @@ export function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-950 to-orange-600">
       <Header isAuthenticated={false} />
       
       <div className="max-w-md mx-auto px-6 py-12">
-        <div className="bg-white border-4 border-gray-400 p-8">
-          <div className="text-center mb-8 border-b-4 border-gray-800 pb-4">
-            <h1 className="text-gray-900 mb-2">Welcome Back</h1>
-            <p className="text-gray-600">
+        <div className="bg-white/95 border border-white/20 shadow-2xl rounded-2xl p-8">
+          <div className="text-center mb-8 border-b border-black/10 pb-4">
+            <h1 className="text-neutral-900 mb-2">Welcome Back</h1>
+            <p className="text-neutral-600">
               Login to your account
             </p>
           </div>
@@ -50,7 +50,7 @@ export function LoginPage() {
             />
 
             <div className="text-right">
-              <Link to="#" className="text-gray-700 border-b-2 border-gray-700">
+              <Link to="#" className="text-neutral-700 hover:text-neutral-900 border-b border-neutral-400 hover:border-neutral-700">
                 Forgot password?
               </Link>
             </div>
@@ -60,9 +60,9 @@ export function LoginPage() {
             </Button>
           </form>
 
-          <p className="text-center text-gray-600 mt-6 pt-6 border-t-2 border-dashed border-gray-300">
+          <p className="text-center text-neutral-700 mt-6 pt-6 border-t border-dashed border-black/20">
             Don't have an account?{' '}
-            <Link to="/signup" className="text-gray-900 border-b-2 border-gray-900">
+            <Link to="/signup" className="text-neutral-900 hover:text-orange-600 border-b border-neutral-400 hover:border-orange-600">
               Sign up
             </Link>
           </p>

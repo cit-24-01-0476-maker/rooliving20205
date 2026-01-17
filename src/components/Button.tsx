@@ -13,13 +13,14 @@ export function Button({
   className = '',
   ...props 
 }: ButtonProps) {
-  const baseStyles = 'border-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles =
+    'rounded-md border-2 font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-orange-500/50';
   
   const variants = {
-    primary: 'bg-gray-800 text-white border-gray-800 hover:bg-gray-700',
-    secondary: 'bg-gray-200 text-gray-900 border-gray-400 hover:bg-gray-300',
-    outline: 'border-gray-400 text-gray-700 bg-white hover:bg-gray-50',
-    ghost: 'text-gray-600 border-transparent hover:bg-gray-100 hover:border-gray-300'
+    primary: 'bg-orange-600 text-black border-orange-600 hover:bg-orange-500',
+    secondary: 'bg-neutral-900 text-white border-neutral-800 hover:bg-neutral-800',
+    outline: 'border-orange-600 text-orange-100 bg-transparent hover:bg-orange-600/15',
+    ghost: 'text-neutral-200 border-transparent hover:bg-white/5 hover:border-white/10'
   };
   
   const sizes = {
