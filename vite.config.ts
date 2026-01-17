@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import tailwind from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
   // ✅ IMPORTANT: Custom domain uses root "/"
   base: '/',
 
-  plugins: [react()],
+  plugins: [react(), tailwind()],
 
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -51,17 +52,17 @@ export default defineConfig({
       '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialog',
       '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
 
-      '@': path.resolve(__dirname, './src'),
-    },
+      '@': path.resolve(__dirname, './src')
+    }
   },
 
   build: {
     target: 'esnext',
-    outDir: 'dist',
+    outDir: 'dist'
   },
 
   server: {
     port: 3000,
-    open: true,
-  },
+    open: true
+  }
 });
