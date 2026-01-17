@@ -1,13 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import tailwind from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
-  // ✅ IMPORTANT: Custom domain uses root "/"
-  base: '/',
+  // ✅ GitHub Pages repo name එක: rooliving20205
+  base: '/rooliving20205/',
 
-  plugins: [react(), tailwind()],
+  plugins: [react()],
 
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -57,7 +56,6 @@ export default defineConfig({
   },
 
   build: {
-    target: 'esnext',
     outDir: 'dist'
   },
 
